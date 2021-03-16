@@ -12,13 +12,13 @@ You will need to install the following CLIs:
 There are some configuration that needs to be done before deploying and provisioning the nodes.
 
 1. Run AWS CLI and enter access and secret keys by running "aws configure":
-
-> rmcmillion-a01:rabbitmq-cluster-terraform-ansible rmcmillion$ aws configure
-> AWS Access Key ID [****************ILOJ]:
-> AWS Secret Access Key [****************y0dt]:
-> Default region name [us-east-1]:
-> Default output format [json]:`
-
+```
+rmcmillion-a01:rabbitmq-cluster-terraform-ansible rmcmillion$ aws configure
+AWS Access Key ID [****************ILOJ]:
+AWS Secret Access Key [****************y0dt]:
+Default region name [us-east-1]:
+Default output format [json]:`
+```
   The keys can be pulled from IAM service in AWS.
 
 2. Open variable.tf and set "aws_region" and "aws_ami" variables.
