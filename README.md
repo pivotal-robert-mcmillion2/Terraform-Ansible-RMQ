@@ -25,8 +25,8 @@ Default output format [json]:`
 
 3. Import a SSH keypair from your machine to AWS EC2 using key pair service on the left hand side.  Name it "main".  This will be used to SSH into the instances so Ansible can configure/cluster the nodes. 
 
-4. Deploy the AWS instances by running "terraform apply -auto-apply"
+4. Deploy the AWS instances by running `terraform apply -auto-apply`
 
 5. Note down the public IPs in the terraform output.  Add the addresses to the node IPs in the "hosts" file.
 
-6. Run "ansible-playbook -i hosts playbook.yml" to configure the nodes for RMQ.  It pulls the latest version of RMQ at this point in time.
+6. Run `ansible-playbook -i hosts playbook.yml` to configure the nodes for RMQ.  It pulls the latest version of RMQ at this point in time.
